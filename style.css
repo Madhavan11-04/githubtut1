@@ -1,0 +1,80 @@
+<style>
+
+        body {
+            color: black;
+            background-color: whitesmoke; /* Moved background color to CSS */
+        }
+h1{
+    background-color: skyblue;
+}
+        ul {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            list-style-type: none; /* Remove bullet points */
+        }
+
+        li {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+        }
+
+        li:hover {
+            background-color: skyblue;
+        }
+
+        h1 {
+            text-align: center;
+            color: black;
+        }
+
+        .zero, .doublezero {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 20px; /* Add some space between items */
+        }
+
+        .one, .two {
+            display: flex;
+            flex-direction: column; /* Stack image and paragraph vertically */
+            align-items: center;
+            flex-basis: calc(50% - 20px); /* Two items per row with space between */
+            box-sizing: border-box;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .one img, .two img {
+            width: 100%;
+            height: 200%;
+            max-width: 500px;
+            border: 2px solid black;
+        }
+
+        .one p, .two p {
+            margin-top: 10px;
+            padding: 10px;
+            border: 2px solid black;
+            text-decoration: solid;
+            text-decoration-color: black;
+        }
+
+        button {
+            font-size: medium;
+            color: white;
+            background-color: red;
+        }
+
+        
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .one, .two {
+                flex-basis: calc(100% - 20px); /* One item per row on smaller screens */
+            }
+        }
+    </style>
